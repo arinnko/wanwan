@@ -12,6 +12,9 @@
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
 		0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */; };
+		0B414CB11F61588A00A12B28 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CB01F61588A00A12B28 /* wanwanm素材1.png */; };
+		0B414CB31F61596B00A12B28 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CB21F61596B00A12B28 /* wanwanm素材1.png */; };
+		0B414CBB1F615F2500A12B28 /* wanwan素材2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CBA1F615F2500A12B28 /* wanwan素材2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0B414CA31F58144900A12B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B414CA61F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B414CA81F58144900A12B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B414CB01F61588A00A12B28 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wanwanm素材1.png"; path = "wanwan.xcodeproj/wanwanm素材1.png"; sourceTree = "<group>"; };
+		0B414CB21F61596B00A12B28 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwanm素材1.png"; sourceTree = "<group>"; };
+		0B414CBA1F615F2500A12B28 /* wanwan素材2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 			children = (
 				0B414C9B1F58144900A12B28 /* wanwan */,
 				0B414C9A1F58144900A12B28 /* Products */,
+				0B414CB01F61588A00A12B28 /* wanwanm素材1.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,8 @@
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
 				0B414CA81F58144900A12B28 /* Info.plist */,
+				0B414CB21F61596B00A12B28 /* wanwanm素材1.png */,
+				0B414CBA1F615F2500A12B28 /* wanwan素材2.png */,
 			);
 			path = wanwan;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					0B414C981F58144900A12B28 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = LX2R37J669;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,8 +133,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B414CB31F61596B00A12B28 /* wanwanm素材1.png in Resources */,
+				0B414CB11F61588A00A12B28 /* wanwanm素材1.png in Resources */,
 				0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */,
 				0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */,
+				0B414CBB1F615F2500A12B28 /* wanwan素材2.png in Resources */,
 				0B414CA21F58144900A12B28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +271,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LX2R37J669;
 				INFOPLIST_FILE = wanwan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "----.wanwan";
+				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,9 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LX2R37J669;
 				INFOPLIST_FILE = wanwan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "----.wanwan";
+				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
