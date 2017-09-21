@@ -3,7 +3,7 @@
 //  wanwan
 //
 //  Created by 山本有紗 on 2017/08/31.
-//  Copyright © 2017年 山本有紗. All rights reserved.
+//  Copyright © 2017年 山本有紗. All rights reserved.HAHAHAHAHAHAHA
 //
 
 import UIKit

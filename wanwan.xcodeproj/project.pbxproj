@@ -15,6 +15,7 @@
 		0B414CB11F61588A00A12B28 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CB01F61588A00A12B28 /* wanwanm素材1.png */; };
 		0B414CB31F61596B00A12B28 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CB21F61596B00A12B28 /* wanwanm素材1.png */; };
 		0B414CBB1F615F2500A12B28 /* wanwan素材2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CBA1F615F2500A12B28 /* wanwan素材2.png */; };
+		0B83A9051F6E73F3008E68C5 /* wanwan素材4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B83A9041F6E73F3008E68C5 /* wanwan素材4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0B414CB01F61588A00A12B28 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wanwanm素材1.png"; path = "wanwan.xcodeproj/wanwanm素材1.png"; sourceTree = "<group>"; };
 		0B414CB21F61596B00A12B28 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwanm素材1.png"; sourceTree = "<group>"; };
 		0B414CBA1F615F2500A12B28 /* wanwan素材2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材2.png"; sourceTree = "<group>"; };
+		0B83A9041F6E73F3008E68C5 /* wanwan素材4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材4.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			children = (
 				0B414C9B1F58144900A12B28 /* wanwan */,
 				0B414C9A1F58144900A12B28 /* Products */,
+				0B83A9041F6E73F3008E68C5 /* wanwan素材4.png */,
 				0B414CB01F61588A00A12B28 /* wanwanm素材1.png */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "山本有紗";
 				TargetAttributes = {
 					0B414C981F58144900A12B28 = {
@@ -135,6 +138,7 @@
 			files = (
 				0B414CB31F61596B00A12B28 /* wanwanm素材1.png in Resources */,
 				0B414CB11F61588A00A12B28 /* wanwanm素材1.png in Resources */,
+				0B83A9051F6E73F3008E68C5 /* wanwan素材4.png in Resources */,
 				0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */,
 				0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */,
 				0B414CBB1F615F2500A12B28 /* wanwan素材2.png in Resources */,
@@ -194,6 +198,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,6 +248,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
