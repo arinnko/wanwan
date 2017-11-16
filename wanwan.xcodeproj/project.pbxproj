@@ -24,6 +24,7 @@
 		0BB153A61FA1F5D1009F90F3 /* chiko2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A21FA1F5D0009F90F3 /* chiko2.jpg */; };
 		0BB153A71FA1F5D1009F90F3 /* chiko4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A31FA1F5D0009F90F3 /* chiko4.png */; };
 		0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */; };
+		7417348D8E32A1A9AC050E01 /* Pods_wanwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DCE6151D4B15B73E04DC04 /* Pods_wanwan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,9 @@
 		0BB153A31FA1F5D0009F90F3 /* chiko4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiko4.png; sourceTree = "<group>"; };
 		0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignClass.swift; sourceTree = "<group>"; };
 		0BCBAD731FB4666500243511 /* AxisStd-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AxisStd-ExtraLight.otf"; sourceTree = "<group>"; };
+		3A5609F774A9327CE79286EF /* Pods-wanwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanwan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wanwan/Pods-wanwan.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA99B02D6683BB9EE1EC144 /* Pods-wanwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanwan.release.xcconfig"; path = "Pods/Target Support Files/Pods-wanwan/Pods-wanwan.release.xcconfig"; sourceTree = "<group>"; };
+		88DCE6151D4B15B73E04DC04 /* Pods_wanwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wanwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7417348D8E32A1A9AC050E01 /* Pods_wanwan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 			children = (
 				0B414C9B1F58144900A12B28 /* wanwan */,
 				0B414C9A1F58144900A12B28 /* Products */,
+				5592D13E0EE4A473258A904B /* Pods */,
+				C5263DDA59F8B752762A21F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = wanwan;
 			sourceTree = "<group>";
 		};
+		5592D13E0EE4A473258A904B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A5609F774A9327CE79286EF /* Pods-wanwan.debug.xcconfig */,
+				6EA99B02D6683BB9EE1EC144 /* Pods-wanwan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5263DDA59F8B752762A21F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88DCE6151D4B15B73E04DC04 /* Pods_wanwan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B414CAB1F58144900A12B28 /* Build configuration list for PBXNativeTarget "wanwan" */;
 			buildPhases = (
+				35011304AF7B407B1334746E /* [CP] Check Pods Manifest.lock */,
 				0B414C951F58144900A12B28 /* Sources */,
 				0B414C961F58144900A12B28 /* Frameworks */,
 				0B414C971F58144900A12B28 /* Resources */,
+				010DB5759BE410A210857C7B /* [CP] Embed Pods Frameworks */,
+				EE8A630F421A533150764937 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +206,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		010DB5759BE410A210857C7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wanwan/Pods-wanwan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wanwan/Pods-wanwan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35011304AF7B407B1334746E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wanwan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8A630F421A533150764937 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wanwan/Pods-wanwan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B414C951F58144900A12B28 /* Sources */ = {
@@ -309,11 +390,12 @@
 		};
 		0B414CAC1F58144900A12B28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5609F774A9327CE79286EF /* Pods-wanwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX2R37J669;
 				INFOPLIST_FILE = wanwan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,11 +405,12 @@
 		};
 		0B414CAD1F58144900A12B28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA99B02D6683BB9EE1EC144 /* Pods-wanwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX2R37J669;
 				INFOPLIST_FILE = wanwan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

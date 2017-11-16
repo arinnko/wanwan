@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import ScrollableGraphView
 
 class GraphViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var collectionView:UICollectionView!
+     var linePlotData = [10.0, 20.0, 43.0, 74.0, 5.0, 82.0]
+    
+    @IBOutlet var graphView:ScrollableGraphView!
 
     override func viewDidLoad() {
         
@@ -50,7 +54,12 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         
         //　画像をさらに５０％丸くする
         imageView.layer.cornerRadius = imageView.frame.size.width * 0.5
-
+        
+        
+       
+//        makeSmoothDark()
+        makeDefalutGraph()
+       
         
 
         // Do any additional setup after loading the view.
@@ -72,8 +81,100 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
+    func makeDefalutGraph() {
+        
+        graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
+        
+        let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
+        let referenceLines = ReferenceLines()
+        
+        graphView.addPlot(plot: linePlot)
+        graphView.addReferenceLines(referenceLines: referenceLines)
+        graphView.shouldAdaptRange = true
+        
+    }
+    
+    
+    func makeSmoothDark(){
+        self.graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
+        
+        // Setup the line plot.
+        let linePlot = LinePlot(identifier: "darkLine")
+        
+        linePlot.lineWidth = 1
+        linePlot.lineColor = UIColor.cyan//.init(hexString: "darkLine")//.colorFromHex(hexString: "darkLine")
+        linePlot.lineStyle = ScrollableGraphViewLineStyle.smooth
+        
+        linePlot.shouldFill = true
+        linePlot.fillType = ScrollableGraphViewFillType.gradient
+        linePlot.fillGradientType = ScrollableGraphViewGradientType.linear
+        linePlot.fillGradientStartColor = UIColor.white//init(hexString: "#555555")//colorFromHex(hexString: "#555555")
+        linePlot.fillGradientEndColor = UIColor.blue//.init(hexString: "#444444")//colorFromHex(hexString: "#444444")
+        
+        linePlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
+        
+        let dotPlot = DotPlot(identifier: "darkLineDot") // Add dots as well.
+        dotPlot.dataPointSize = 2
+        dotPlot.dataPointFillColor = UIColor.white
+        
+        dotPlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
+        
+        // Setup the reference lines.
+        let referenceLines = ReferenceLines()
+        
+        referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
+        referenceLines.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
+        referenceLines.referenceLineLabelColor = UIColor.white
+        
+        referenceLines.positionType = .absolute
+        // Reference lines will be shown at these values on the y-axis.
+        referenceLines.absolutePositions = [10, 20, 25, 30]
+        referenceLines.includeMinMax = false
+        
+        referenceLines.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
+        
+        // Setup the graph
+        graphView.backgroundFillColor = UIColor.red//.init(hexString: "#333333")//colorFromHex(hexString: "#333333")
+        graphView.dataPointSpacing = 80
+        
+        graphView.shouldAnimateOnStartup = true
+        graphView.shouldAdaptRange = true
+        graphView.shouldRangeAlwaysStartAtZero = true
+        
+        graphView.rangeMax = 50
+        
+        // Add everything to the graph.
+        graphView.addReferenceLines(referenceLines: referenceLines)
+        graphView.addPlot(plot: linePlot)
+        graphView.addPlot(plot: dotPlot)
+        
+      
+    }
+    
     
 }
+
+extension GraphViewController: ScrollableGraphViewDataSource {
+    func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+        //        switch(plot.identifier) {
+        //        case "line":
+        //            return linePlotData[pointIndex]
+        //        default:
+        //            return 0
+        //        }
+        
+        return linePlotData[pointIndex]
+    }
+    
+    func label(atIndex pointIndex: Int) -> String {
+        return "FEB \(pointIndex)"
+    }
+    
+    func numberOfPoints() -> Int {
+        return linePlotData.count
+    }
+}
+
     
     
     
