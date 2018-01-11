@@ -57,8 +57,9 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         
         
        
-//        makeSmoothDark()
-        makeDefalutGraph()
+        makeSmoothDark()
+//        makeDefalutGraph()
+        graphView.dataSource = self
        
         
 
@@ -96,7 +97,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
     
     
     func makeSmoothDark(){
-        self.graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
+//        self.graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
         
         // Setup the line plot.
         let linePlot = LinePlot(identifier: "darkLine")
@@ -109,13 +110,13 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         linePlot.fillType = ScrollableGraphViewFillType.gradient
         linePlot.fillGradientType = ScrollableGraphViewGradientType.linear
         linePlot.fillGradientStartColor = UIColor.white//init(hexString: "#555555")//colorFromHex(hexString: "#555555")
-        linePlot.fillGradientEndColor = UIColor.blue//.init(hexString: "#444444")//colorFromHex(hexString: "#444444")
+        linePlot.fillGradientEndColor = UIColor.init(red: 255.0/255, green: 250.0/255, blue: 122.0/255, alpha: 1.0)//.init(hexString: "#444444")//colorFromHex(hexString: "#444444")
         
         linePlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
         let dotPlot = DotPlot(identifier: "darkLineDot") // Add dots as well.
-        dotPlot.dataPointSize = 2
-        dotPlot.dataPointFillColor = UIColor.white
+        dotPlot.dataPointSize = 4
+        dotPlot.dataPointFillColor = UIColor.init(red: 255.0/255, green: 178.0/255, blue: 0.0/255, alpha: 1.0)
         
         dotPlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
@@ -134,7 +135,8 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         referenceLines.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
         
         // Setup the graph
-        graphView.backgroundFillColor = UIColor.red//.init(hexString: "#333333")//colorFromHex(hexString: "#333333")
+        graphView.backgroundFillColor = UIColor.clear//.init(hex: "#FFC0CB")
+        //.init(red: 218.0/255.0, green: 255/255, blue: 192/255, alpha: 1.0)//.init(hexString: "#333333")//colorFromHex(hexString: "#333333")
         graphView.dataPointSpacing = 80
         
         graphView.shouldAnimateOnStartup = true
