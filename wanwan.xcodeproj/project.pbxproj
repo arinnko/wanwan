@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B0277721FC6DBD800832DC1 /* wanwan素材13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0277711FC6DBD800832DC1 /* wanwan素材13.png */; };
+		0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0EE17D200772680077AF82 /* CalenderViewController.swift */; };
+		0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */; };
+		0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE181200778330077AF82 /* wanwan素材15.png */; };
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
 		0B414C9F1F58144900A12B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9E1F58144900A12B28 /* ViewController.swift */; };
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		0B0277711FC6DBD800832DC1 /* wanwan素材13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材13.png"; sourceTree = "<group>"; };
+		0B0EE17D200772680077AF82 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材14.PNG"; sourceTree = SOURCE_ROOT; };
+		0B0EE181200778330077AF82 /* wanwan素材15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材15.png"; sourceTree = "<group>"; };
 		0B414C991F58144900A12B28 /* wanwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B414C9C1F58144900A12B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B414C9E1F58144900A12B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0B414C9B1F58144900A12B28 /* wanwan */,
+				0B0EE181200778330077AF82 /* wanwan素材15.png */,
 				0B414C9A1F58144900A12B28 /* Products */,
 				5592D13E0EE4A473258A904B /* Pods */,
 				C5263DDA59F8B752762A21F9 /* Frameworks */,
@@ -93,6 +100,7 @@
 				0B414C9E1F58144900A12B28 /* ViewController.swift */,
 				0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */,
 				0B414CA01F58144900A12B28 /* Main.storyboard */,
+				0B0EE17D200772680077AF82 /* CalenderViewController.swift */,
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
@@ -108,6 +116,7 @@
 				0B52520F1F9B83430075F975 /* wanwan素材6.png */,
 				0B5252111F9B834E0075F975 /* wanwan素材7.png */,
 				0B0277711FC6DBD800832DC1 /* wanwan素材13.png */,
+				0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */,
 			);
 			path = wanwan;
 			sourceTree = "<group>";
@@ -202,8 +211,10 @@
 				0BB153A71FA1F5D1009F90F3 /* chiko4.png in Resources */,
 				0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */,
 				0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */,
+				0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */,
 				0B414CA21F58144900A12B28 /* Main.storyboard in Resources */,
 				0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */,
+				0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */,
 				0B52520C1F98BF210075F975 /* wanwan素材4.png in Resources */,
 				0B5252061F98B73D0075F975 /* wanwanm素材1.png in Resources */,
 			);
@@ -219,10 +230,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wanwan/Pods-wanwan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */,
 				0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
 				0B414C9F1F58144900A12B28 /* ViewController.swift in Sources */,
