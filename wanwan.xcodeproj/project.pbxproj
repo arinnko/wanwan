@@ -11,6 +11,7 @@
 		0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0EE17D200772680077AF82 /* CalenderViewController.swift */; };
 		0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */; };
 		0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE181200778330077AF82 /* wanwan素材15.png */; };
+		0B389791202C58A40014A5C5 /* setting1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B389790202C58A40014A5C5 /* setting1.swift */; };
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
 		0B414C9F1F58144900A12B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9E1F58144900A12B28 /* ViewController.swift */; };
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		0B0EE17D200772680077AF82 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材14.PNG"; sourceTree = SOURCE_ROOT; };
 		0B0EE181200778330077AF82 /* wanwan素材15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材15.png"; sourceTree = "<group>"; };
+		0B389790202C58A40014A5C5 /* setting1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = setting1.swift; path = /Users/Arisa/Desktop/wanwan/wanwan/setting1.swift; sourceTree = "<absolute>"; };
 		0B414C991F58144900A12B28 /* wanwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B414C9C1F58144900A12B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B414C9E1F58144900A12B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,10 +101,11 @@
 				0B414C9C1F58144900A12B28 /* AppDelegate.swift */,
 				0B414C9E1F58144900A12B28 /* ViewController.swift */,
 				0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */,
-				0B414CA01F58144900A12B28 /* Main.storyboard */,
-				0B0EE17D200772680077AF82 /* CalenderViewController.swift */,
-				0B414CA31F58144900A12B28 /* Assets.xcassets */,
+				0B389790202C58A40014A5C5 /* setting1.swift */,
 				0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */,
+				0B0EE17D200772680077AF82 /* CalenderViewController.swift */,
+				0B414CA01F58144900A12B28 /* Main.storyboard */,
+				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
 				0B414CA81F58144900A12B28 /* Info.plist */,
 				0BB153A11FA1F5D0009F90F3 /* chiko1.jpg */,
@@ -285,6 +288,7 @@
 			files = (
 				0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */,
 				0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */,
+				0B389791202C58A40014A5C5 /* setting1.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
 				0B414C9F1F58144900A12B28 /* ViewController.swift in Sources */,
 				0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */,
