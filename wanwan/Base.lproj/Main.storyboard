@@ -535,10 +535,6 @@
                                             <!--2017-11-23 10:38:43 +0000-->
                                         </date>
                                     </datePicker>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wanwan素材13.png" translatesAutoresizingMaskIntoConstraints="NO" id="dkl-HG-JRE">
-                                        <rect key="frame" x="124" y="458" width="94" height="94"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87989848039999996" green="1" blue="0.91727292100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -585,7 +581,6 @@
         <image name="chiko1.jpg" width="1798" height="1795"/>
         <image name="wanwanm素材1.png" width="32" height="31"/>
         <image name="wanwanm素材2.png" width="902" height="1398"/>
-        <image name="wanwan素材13.png" width="200" height="200"/>
         <image name="wanwan素材2.png" width="29" height="32"/>
         <image name="wanwan素材4.png" width="32" height="32"/>
         <image name="wanwan素材6.png" width="100" height="100"/>
