@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.87989848039999996" green="1" blue="0.91727292100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-Id-btz">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-Id-btz" customClass="FSCalendar">
                                 <rect key="frame" x="16" y="28" width="343" height="492"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,10 +131,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnb-Xr-C7C">
-                                <rect key="frame" x="43" y="54" width="287" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="＋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DU-5o-gM1">
                                 <rect key="frame" x="304" y="12" width="63" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -386,7 +382,7 @@
         <!--Setting1 View Controller-->
         <scene sceneID="SSx-eE-gBI">
             <objects>
-                <viewController id="0ne-SP-MeL" customClass="Setting1ViewController" sceneMemberID="viewController">
+                <viewController id="0ne-SP-MeL" customClass="Setting1ViewController" customModule="wanwan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cl6-MI-WNK"/>
                         <viewControllerLayoutGuide type="bottom" id="xef-N4-nra"/>
@@ -455,6 +451,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk1-ob-mo0">
+                                        <rect key="frame" x="269" y="537" width="42" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87989848039999996" green="1" blue="0.91727292100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -466,6 +469,7 @@
                         <outlet property="conditionPicker" destination="DrU-gI-mJA" id="1Qh-iR-xEU"/>
                         <outlet property="textView" destination="eyH-Fk-5ri" id="LXd-kI-X7S"/>
                         <outlet property="textView2" destination="du2-5z-lve" id="gWb-XG-CgG"/>
+                        <outlet property="textlabel" destination="hk1-ob-mo0" id="0n0-0L-ocy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alx-eD-UIA" userLabel="First Responder" sceneMemberID="firstResponder"/>

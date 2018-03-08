@@ -1,3 +1,7 @@
+
+
+
+
 //
 //  setting1.swift
 //  
@@ -8,7 +12,10 @@
 import UIKit
 
 class Setting1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
+    
+    @IBOutlet weak var textlabel: UILabel!
+    
     
     
     // 選択肢
@@ -18,7 +25,7 @@ class Setting1ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet var appetitePicker: UIPickerView!
     @IBOutlet var conditionPicker: UIPickerView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,30 +38,43 @@ class Setting1ViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         appetitePicker.selectedRow(inComponent: 1)
         conditionPicker.selectedRow(inComponent: 1)
         
-        
-    
-        // ピッカーさん
-//        //let picker = UIPickerView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
-//        picker.center = self.view.center
-//
-//        // はじめに表示するやつ
-//        picker.selectRow(1, inComponent: 0, animated: true)
-
     }
     
+
+    
+    
+    
+
+    
+    
+    //データ選択時の呼び出しメソッド
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //コンポーネントごとに現在選択されているデータを取得する。
+        let data1 = self.pickerView(pickerView, titleForRow: pickerView.selectedRow(inComponent: 0), forComponent: 0)
+        
+        print(data1)
+    }
+    
+    //コンポーネントの個数を返すメソッド
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "ありんこ"
-    }
-//wwwwwwwwwwwwwwwwwwwww
     
     
 
+    
+    //コンポーネントに含まれるデータの個数を返すメソッド
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dataList.count
+    }
+
+    //データを返すメソッド
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return dataList[row]
+    }
+    //wwwwwwwwwwwwwwwwwwwww
+    
+    
+    
 }
