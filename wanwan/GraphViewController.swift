@@ -110,13 +110,13 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         linePlot.fillType = ScrollableGraphViewFillType.gradient
         linePlot.fillGradientType = ScrollableGraphViewGradientType.linear
         linePlot.fillGradientStartColor = UIColor.white//init(hexString: "#555555")//colorFromHex(hexString: "#555555")
-        linePlot.fillGradientEndColor = UIColor.init(red: 255.0/255, green: 250.0/255, blue: 122.0/255, alpha: 1.0)//.init(hexString: "#444444")//colorFromHex(hexString: "#444444")
+        linePlot.fillGradientEndColor = UIColor.init(red: 255.0/255, green: 0.0/255, blue: 50.0/255, alpha: 0.0)//.init(hexString: "#444444")//colorFromHex(hexString: "#444444")
         
         linePlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
         let dotPlot = DotPlot(identifier: "darkLineDot") // Add dots as well.
         dotPlot.dataPointSize = 4
-        dotPlot.dataPointFillColor = UIColor.init(red: 255.0/255, green: 178.0/255, blue: 0.0/255, alpha: 1.0)
+        dotPlot.dataPointFillColor = UIColor.init(red: 255.0/255, green: 0.0/255, blue: 100.0/255, alpha: 0.5)
         
         dotPlot.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
         
@@ -124,7 +124,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         let referenceLines = ReferenceLines()
         
         referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
-        referenceLines.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
+        referenceLines.referenceLineColor = UIColor.white.withAlphaComponent(0.2)   
         referenceLines.referenceLineLabelColor = UIColor.white
         
         referenceLines.positionType = .absolute
