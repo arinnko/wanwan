@@ -15,24 +15,26 @@ class CalenderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     var date: Date?
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         calenderView.delegate = self
         calenderView.dataSource = self
         
-        calenderView.appearance.titleTodayColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 100)
+        calenderView.appearance.titleTodayColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 100)
         calenderView.appearance.headerTitleColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 100)
         calenderView.appearance.eventColor = UIColor(red: 230.0/255.0, green: 168.0/255.0, blue: 218.0/255.0, alpha: 100)
         calenderView.appearance.selectionColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 100)
         calenderView.appearance.todayColor = UIColor(red: 170.0/255.0, green: 150.0/255.0, blue: 218.0/255.0, alpha: 100)
         calenderView.appearance.todaySelectionColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 100)
         
-        
-
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        calenderView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,20 +46,33 @@ class CalenderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         let todaySchedule = schedules.filter { schedule in
             if let start = schedule["start"] as? Date,
                 let end = schedule["end"] as? Date {
-                return date > start && end > date
+                let calender = Calendar.current
+                let startDate = calender.startOfDay(for: start)
+                let endDate = calender.startOfDay(for: end)
+                let thisDate = calender.startOfDay(for: date)
+                
+                if startDate == endDate {
+                    return thisDate == startDate
+                } else {
+                    return thisDate >= startDate && endDate >= thisDate
+                }
             } else {
                 return false
             }
-        }.first
-        if todaySchedule == nil{
+        }
+        if todaySchedule.isEmpty{
             return false
         } else {
-            return true
-        
+            if todaySchedule.count>2{
+                return true
+            }else{
+                return true
+            }
+            
         }
         
     }
-   
+    
     //
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         self.date = date
@@ -71,5 +86,5 @@ class CalenderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         }
         
     }
-
+    
 }

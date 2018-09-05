@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B0277721FC6DBD800832DC1 /* wanwan素材13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0277711FC6DBD800832DC1 /* wanwan素材13.png */; };
-		0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0EE17D200772680077AF82 /* CalenderViewController.swift */; };
+		0B0EE17E200772680077AF82 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0EE17D200772680077AF82 /* CalendarViewController.swift */; };
 		0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */; };
 		0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE181200778330077AF82 /* wanwan素材15.png */; };
-		0B389791202C58A40014A5C5 /* setting1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B389790202C58A40014A5C5 /* setting1.swift */; };
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
@@ -29,16 +28,18 @@
 		0BB153A61FA1F5D1009F90F3 /* chiko2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A21FA1F5D0009F90F3 /* chiko2.jpg */; };
 		0BB153A71FA1F5D1009F90F3 /* chiko4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A31FA1F5D0009F90F3 /* chiko4.png */; };
 		0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */; };
+		0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */; };
+		0BCA323C213AAF2B00C08E39 /* 2018.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCA323B213AAF2B00C08E39 /* 2018.png */; };
 		0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCF4BEE21293F2300FF8AD6 /* ScheduleViewController.swift */; };
+		0BD8FE6D212FE73E00D2E813 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD8FE6C212FE73E00D2E813 /* DogListViewController.swift */; };
 		7417348D8E32A1A9AC050E01 /* Pods_wanwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DCE6151D4B15B73E04DC04 /* Pods_wanwan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B0277711FC6DBD800832DC1 /* wanwan素材13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材13.png"; sourceTree = "<group>"; };
-		0B0EE17D200772680077AF82 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		0B0EE17D200772680077AF82 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wanwan素材14.PNG"; path = "wanwan/素材/wanwan素材14.PNG"; sourceTree = SOURCE_ROOT; };
 		0B0EE181200778330077AF82 /* wanwan素材15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材15.png"; sourceTree = "<group>"; };
-		0B389790202C58A40014A5C5 /* setting1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = setting1.swift; path = /Users/Arisa/Desktop/wanwan/wanwan/setting1.swift; sourceTree = "<absolute>"; };
 		0B414C991F58144900A12B28 /* wanwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B414C9C1F58144900A12B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B414CA11F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,9 +59,12 @@
 		0BB153A21FA1F5D0009F90F3 /* chiko2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko2.jpg; sourceTree = "<group>"; };
 		0BB153A31FA1F5D0009F90F3 /* chiko4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chiko4.png; sourceTree = "<group>"; };
 		0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignClass.swift; sourceTree = "<group>"; };
+		0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0BCA323B213AAF2B00C08E39 /* 2018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2018.png; path = ../../../2018.png; sourceTree = "<group>"; };
 		0BCBAD731FB4666500243511 /* AxisStd-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AxisStd-ExtraLight.otf"; sourceTree = "<group>"; };
 		0BCF4BEB2129133600FF8AD6 /* KodomoRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KodomoRounded-Light.otf"; path = "../../../素材/フォント/KodomoRounded-Light.otf"; sourceTree = "<group>"; };
 		0BCF4BEE21293F2300FF8AD6 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		0BD8FE6C212FE73E00D2E813 /* DogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewController.swift; sourceTree = "<group>"; };
 		3A5609F774A9327CE79286EF /* Pods-wanwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanwan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wanwan/Pods-wanwan.debug.xcconfig"; sourceTree = "<group>"; };
 		6EA99B02D6683BB9EE1EC144 /* Pods-wanwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanwan.release.xcconfig"; path = "Pods/Target Support Files/Pods-wanwan/Pods-wanwan.release.xcconfig"; sourceTree = "<group>"; };
 		88DCE6151D4B15B73E04DC04 /* Pods_wanwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wanwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,11 +105,12 @@
 			children = (
 				0B414C9C1F58144900A12B28 /* AppDelegate.swift */,
 				0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */,
-				0B389790202C58A40014A5C5 /* setting1.swift */,
 				0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */,
-				0B0EE17D200772680077AF82 /* CalenderViewController.swift */,
+				0B0EE17D200772680077AF82 /* CalendarViewController.swift */,
 				0BCF4BEE21293F2300FF8AD6 /* ScheduleViewController.swift */,
+				0BD8FE6C212FE73E00D2E813 /* DogListViewController.swift */,
 				0B414CA01F58144900A12B28 /* Main.storyboard */,
+				0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */,
 				0B91969A2127DFA100C6F665 /* PostViewController.swift */,
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
@@ -118,6 +123,7 @@
 		0BCF4BE8212900C800FF8AD6 /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				0BCA323B213AAF2B00C08E39 /* 2018.png */,
 				0BCF4BEB2129133600FF8AD6 /* KodomoRounded-Light.otf */,
 				0BCBAD731FB4666500243511 /* AxisStd-ExtraLight.otf */,
 				0B0EE181200778330077AF82 /* wanwan素材15.png */,
@@ -228,6 +234,7 @@
 				0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */,
 				0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */,
 				0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */,
+				0BCA323C213AAF2B00C08E39 /* 2018.png in Resources */,
 				0B414CA21F58144900A12B28 /* Main.storyboard in Resources */,
 				0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */,
 				0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */,
@@ -299,11 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B0EE17E200772680077AF82 /* CalenderViewController.swift in Sources */,
+				0B0EE17E200772680077AF82 /* CalendarViewController.swift in Sources */,
 				0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */,
-				0B389791202C58A40014A5C5 /* setting1.swift in Sources */,
+				0BD8FE6D212FE73E00D2E813 /* DogListViewController.swift in Sources */,
 				0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
+				0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */,
 				0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */,
 				0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */,
 			);
@@ -436,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
