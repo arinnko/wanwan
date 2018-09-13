@@ -103,7 +103,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         let linePlot = LinePlot(identifier: "darkLine")
         
         linePlot.lineWidth = 1
-        linePlot.lineColor = UIColor.cyan//.init(hexString: "darkLine")//.colorFromHex(hexString: "darkLine")
+        linePlot.lineColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 0.0)
         linePlot.lineStyle = ScrollableGraphViewLineStyle.smooth
         
         linePlot.shouldFill = true
@@ -124,7 +124,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         let referenceLines = ReferenceLines()
         
         referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
-        referenceLines.referenceLineColor = UIColor.white.withAlphaComponent(0.2)   
+        referenceLines.referenceLineColor = UIColor(red: 255.0/255, green: 0.0/255, blue: 100.0/255, alpha: 0.5).withAlphaComponent(0.2)
         referenceLines.referenceLineLabelColor = UIColor.white
         
         referenceLines.positionType = .absolute

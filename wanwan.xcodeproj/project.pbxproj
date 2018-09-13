@@ -21,6 +21,7 @@
 		0B52520E1F9B7EC10075F975 /* wanwan素材5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520D1F9B7EC10075F975 /* wanwan素材5.png */; };
 		0B5252101F9B83430075F975 /* wanwan素材6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520F1F9B83430075F975 /* wanwan素材6.png */; };
 		0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252111F9B834E0075F975 /* wanwan素材7.png */; };
+		0B8A8CE2214A837200130564 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8A8CE1214A837100130564 /* icon.png */; };
 		0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91969A2127DFA100C6F665 /* PostViewController.swift */; };
 		0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */; };
 		0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */; };
@@ -51,6 +52,7 @@
 		0B52520D1F9B7EC10075F975 /* wanwan素材5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材5.png"; sourceTree = "<group>"; };
 		0B52520F1F9B83430075F975 /* wanwan素材6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材6.png"; sourceTree = "<group>"; };
 		0B5252111F9B834E0075F975 /* wanwan素材7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材7.png"; sourceTree = "<group>"; };
+		0B8A8CE1214A837100130564 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		0B91969A2127DFA100C6F665 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko3.jpg; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		0BCF4BE8212900C800FF8AD6 /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				0B8A8CE1214A837100130564 /* icon.png */,
 				0BCF4BEB2129133600FF8AD6 /* KodomoRounded-Light.otf */,
 				0BCBAD731FB4666500243511 /* AxisStd-ExtraLight.otf */,
 				0B0EE181200778330077AF82 /* wanwan素材15.png */,
@@ -226,6 +229,7 @@
 				0B52520E1F9B7EC10075F975 /* wanwan素材5.png in Resources */,
 				0B5252101F9B83430075F975 /* wanwan素材6.png in Resources */,
 				0BB153A51FA1F5D1009F90F3 /* chiko1.jpg in Resources */,
+				0B8A8CE2214A837200130564 /* icon.png in Resources */,
 				0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */,
 				0BB153A71FA1F5D1009F90F3 /* chiko4.png in Resources */,
 				0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */,
