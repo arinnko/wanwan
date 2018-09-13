@@ -11,6 +11,17 @@ import UIKit
 
 class RegistrationViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var dognameTextField: UITextField!
+    @IBOutlet weak var Femalebutton: UIButton!
+    @IBOutlet weak var Malelebutton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Femalebutton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        Malelebutton.layer.cornerRadius = 10.0 // 角丸のサイズ
+
+        
+    }
     
     @IBAction func save() {
         //userDefaultを呼び出し
