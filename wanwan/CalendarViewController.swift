@@ -14,18 +14,18 @@ class CalenderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     @IBOutlet var calenderView:FSCalendar!
     
     var date: Date?
-    
+    let u = Util()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         calenderView.delegate = self
         calenderView.dataSource = self
         
-        calenderView.appearance.titleTodayColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 100)
-        calenderView.appearance.headerTitleColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 100)
+        calenderView.appearance.titleTodayColor = UIColor.black
+        calenderView.appearance.headerTitleColor = u.rgb(r: 229, g: 166, b: 190)
         calenderView.appearance.eventColor = UIColor(red: 230.0/255.0, green: 168.0/255.0, blue: 218.0/255.0, alpha: 100)
         calenderView.appearance.selectionColor = UIColor(red: 230.0/255.0, green: 115.0/255.0, blue: 155.0/255.0, alpha: 100)
-        calenderView.appearance.todayColor = UIColor(red: 170.0/255.0, green: 150.0/255.0, blue: 218.0/255.0, alpha: 100)
+        calenderView.appearance.todayColor = u.todayColor
         calenderView.appearance.todaySelectionColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 100)
         
         // Do any additional setup after loading the view.

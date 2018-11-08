@@ -12,6 +12,7 @@
 		0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */; };
 		0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE181200778330077AF82 /* wanwan素材15.png */; };
 		0B1AA38B2181CBEA008DC2E5 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AA38A2181CBEA008DC2E5 /* DailyViewController.swift */; };
+		0B1AA38D21944CFB008DC2E5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AA38C21944CFB008DC2E5 /* Util.swift */; };
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wanwan素材14.PNG"; path = "wanwan/素材/wanwan素材14.PNG"; sourceTree = SOURCE_ROOT; };
 		0B0EE181200778330077AF82 /* wanwan素材15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材15.png"; sourceTree = "<group>"; };
 		0B1AA38A2181CBEA008DC2E5 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		0B1AA38C21944CFB008DC2E5 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		0B414C991F58144900A12B28 /* wanwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B414C9C1F58144900A12B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B414CA11F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0B414C9C1F58144900A12B28 /* AppDelegate.swift */,
+				0B1AA38C21944CFB008DC2E5 /* Util.swift */,
 				0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */,
 				0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */,
 				0B0EE17D200772680077AF82 /* CalendarViewController.swift */,
@@ -316,6 +319,7 @@
 				0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
 				0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */,
+				0B1AA38D21944CFB008DC2E5 /* Util.swift in Sources */,
 				0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */,
 				0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */,
 			);

@@ -193,24 +193,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-0j-bCz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iam-Fy-doe">
-                                        <rect key="frame" x="315" y="9" width="41" height="49"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.94117647059999998" green="0.63529411759999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="x9Q-8R-3ul" kind="show" id="TAG-BA-l47"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98889893289999997" green="0.95649880170000001" blue="0.97270232440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jt2-wG-8eS">
                                 <rect key="frame" x="0.0" y="54" width="375" height="388"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -228,13 +210,32 @@
                                 </view>
                                 <cells/>
                             </collectionView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-YD-bRZ">
-                                <rect key="frame" x="0.0" y="495" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-YD-bRZ">
+                                <rect key="frame" x="0.0" y="490" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.95686274509803926" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-0j-bCz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iam-Fy-doe">
+                                        <rect key="frame" x="315" y="9" width="41" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" red="0.94117647059999998" green="0.63529411759999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="x9Q-8R-3ul" kind="show" id="TAG-BA-l47"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98889893289999997" green="0.95649880170000001" blue="0.97270232440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ce9-YD-bRZ" firstAttribute="top" secondItem="Ler-0j-bCz" secondAttribute="bottom" constant="44" id="nKe-vI-kvg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="calendar" image="wanwan素材2.png" id="63A-gE-7jt">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
@@ -304,9 +305,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGs-6f-rxc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGs-6f-rxc">
                                 <rect key="frame" x="34" y="98" width="86" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -362,6 +362,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="okT-Hk-GYg" firstAttribute="top" secondItem="HIP-CB-Fxt" secondAttribute="top" id="DG5-iF-KPn"/>
+                            <constraint firstItem="okT-Hk-GYg" firstAttribute="top" secondItem="HIP-CB-Fxt" secondAttribute="top" id="EoL-sw-Dy1"/>
+                            <constraint firstItem="oGs-6f-rxc" firstAttribute="top" secondItem="okT-Hk-GYg" secondAttribute="bottom" constant="432" id="Nje-PC-KE2"/>
+                            <constraint firstItem="okT-Hk-GYg" firstAttribute="top" secondItem="HIP-CB-Fxt" secondAttribute="top" id="ZgR-vy-HHY"/>
+                            <constraint firstItem="okT-Hk-GYg" firstAttribute="top" secondItem="HIP-CB-Fxt" secondAttribute="top" id="fOB-12-OQu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -475,7 +479,7 @@
                                     <color key="titleColor" red="0.99136143919999997" green="0.61473417279999998" blue="0.75303280350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="umx-IW-GgS" kind="show" id="0bz-f3-U9c"/>
+                                    <segue destination="umx-IW-GgS" kind="show" identifier="backToTop" id="0bz-f3-U9c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60w-h9-IVK">
@@ -524,7 +528,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ここに入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEY-Jb-9of">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEY-Jb-9of">
                                                 <rect key="frame" x="96" y="9" width="162" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -552,6 +556,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="cancel" destination="x9Q-8R-3ul" eventType="touchUpInside" id="rT0-KR-Auj"/>
+                                                    <segue destination="Kth-9d-GDN" kind="unwind" unwindAction="backToTopWithSegue:" id="FLv-0H-TYE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHt-MH-FPr">
@@ -563,6 +568,8 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="save" destination="x9Q-8R-3ul" eventType="touchUpInside" id="ccz-qy-R0L"/>
+                                                    <action selector="saveButton:" destination="umx-IW-GgS" eventType="touchUpInside" id="YTh-a3-KyW"/>
+                                                    <segue destination="Kth-9d-GDN" kind="unwind" unwindAction="saveWithSegue:" id="P5N-ek-90T"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -590,10 +597,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="weightTextField" destination="BEY-Jb-9of" id="8Zn-AE-Mju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhL-SL-bPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Kth-9d-GDN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="465.51724137931041"/>
+            <point key="canvasLocation" x="1706" y="466"/>
         </scene>
         <!--Title-->
         <scene sceneID="im6-K1-uoP">
