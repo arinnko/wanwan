@@ -193,9 +193,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jt2-wG-8eS">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jt2-wG-8eS">
                                 <rect key="frame" x="0.0" y="54" width="375" height="388"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93906646573604058" green="0.93906646573604058" blue="0.93906646573604058" alpha="0.5158390410958904" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="17" id="7WQ-ht-LUm">
                                     <size key="itemSize" width="55" height="56"/>
@@ -214,7 +213,7 @@
                                 <rect key="frame" x="0.0" y="490" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.95686274509803926" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-0j-bCz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-0j-bCz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iam-Fy-doe">
@@ -225,7 +224,7 @@
                                             <color key="titleColor" red="0.94117647059999998" green="0.63529411759999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="x9Q-8R-3ul" kind="show" id="TAG-BA-l47"/>
+                                            <segue destination="x9Q-8R-3ul" kind="presentation" id="F1S-Xf-cDd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -234,7 +233,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="trailing" secondItem="ce9-YD-bRZ" secondAttribute="trailing" id="05E-s5-u67"/>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="top" secondItem="QEO-QD-egF" secondAttribute="top" id="2zI-dE-68s"/>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="leading" secondItem="ce9-YD-bRZ" secondAttribute="leading" id="63b-FR-wp4"/>
+                            <constraint firstAttribute="bottom" secondItem="Ler-0j-bCz" secondAttribute="bottom" constant="609" id="Baf-no-1rI"/>
+                            <constraint firstAttribute="trailing" secondItem="Ler-0j-bCz" secondAttribute="trailing" id="GN0-vr-Twf"/>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="leading" secondItem="Jt2-wG-8eS" secondAttribute="leading" id="hd6-L6-aJO"/>
                             <constraint firstItem="ce9-YD-bRZ" firstAttribute="top" secondItem="Ler-0j-bCz" secondAttribute="bottom" constant="44" id="nKe-vI-kvg"/>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="leading" secondItem="QEO-QD-egF" secondAttribute="leading" id="rOb-c2-Uah"/>
+                            <constraint firstItem="Ler-0j-bCz" firstAttribute="trailing" secondItem="Jt2-wG-8eS" secondAttribute="trailing" id="wZE-8Y-eAh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="calendar" image="wanwan素材2.png" id="63A-gE-7jt">
@@ -377,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKX-1a-AmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="1210.344827586207"/>
+            <point key="canvasLocation" x="1228" y="1185"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="Exd-0U-twu">
