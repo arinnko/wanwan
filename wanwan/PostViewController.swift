@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PostViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
+class PostViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var startDatepickerView: UIDatePicker!

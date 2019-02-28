@@ -9,7 +9,7 @@
 import UIKit
 import ScrollableGraphView
 
-class GraphViewController: UIViewController, UICollectionViewDataSource {
+class GraphViewController: UIViewController, UICollectionViewDataSource, UITextFieldDelegate {
     
     @IBOutlet var collectionView:UICollectionView!
      var linePlotData = [10.0, 20.0, 43.0, 74.0, 5.0, 82.0]
@@ -24,10 +24,15 @@ class GraphViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         makeSmoothDark()
         graphView.dataSource = self
-       
-        
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillApper(_ animated: Bool) {
+        super.viewWillApper(animated)
+        
+        let savedate = UserDefaults.standard
+        let number = savedate.String("Date")
+        print(number)
     }
 
     override func didReceiveMemoryWarning() {
