@@ -16,9 +16,6 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Femalebutton.layer.cornerRadius = 10.0 // 角丸のサイズ
-        Malelebutton.layer.cornerRadius = 10.0 // 角丸のサイズ
 
         
     }

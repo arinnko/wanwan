@@ -11,28 +11,54 @@ import ScrollableGraphView
 
 class GraphViewController: UIViewController, UICollectionViewDataSource, UITextFieldDelegate {
     
-    @IBOutlet var collectionView:UICollectionView!
-     var linePlotData = [10.0, 20.0, 43.0, 74.0, 5.0, 82.0]
+    var  saveData: UserDefaults = UserDefaults.standard
     
-    @IBOutlet var graphView:ScrollableGraphView!
+    @IBOutlet var collectionView:UICollectionView!
+    var linePlotData: [Double] = []
+    @IBOutlet var graphBaseView:UIView! {
+        didSet {
+            makeSmoothDark()
+            
+//            let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
+//            let referenceLines = ReferenceLines()
+//            
+//            graphView.addPlot(plot: linePlot)
+//            graphView.addReferenceLines(referenceLines: referenceLines)
+//            graphView.shouldAdaptRange = true
+        }
+    }
     
     @IBAction func backToTop(segue: UIStoryboardSegue) {}
     @IBAction func save(segue: UIStoryboardSegue) {}
 
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        makeSmoothDark()
-        graphView.dataSource = self
+    super.viewDidLoad()
+        
+        if saveData.array(forKey: "Data") != nil {
+            linePlotData = saveData.array(forKey: "Data") as! [Double]
+        }
+        
+        
+//        graphView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillApper(_ animated: Bool) {
-        super.viewWillApper(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
         
-        let savedate = UserDefaults.standard
-        let number = savedate.String("Date")
-        print(number)
+        if saveData.object(forKey: "Data") != nil{
+            linePlotData = saveData.object(forKey: "Data") as! [Double]
+            
+            
+            //reloadInputViews()
+           
+        }
+        
+//        makeDefalutGraph()
+        makeSmoothDark()
+//        graphView.reload()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,22 +77,24 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
         return cell
     }
     
-    func makeDefalutGraph() {
-        
-        graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
-        
-        let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
-        let referenceLines = ReferenceLines()
-        
-        graphView.addPlot(plot: linePlot)
-        graphView.addReferenceLines(referenceLines: referenceLines)
-        graphView.shouldAdaptRange = true
-        
-    }
+//    func makeDefalutGraph() {
+//
+////        graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
+//
+//        let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
+//        let referenceLines = ReferenceLines()
+//
+//        graphView.addPlot(plot: linePlot)
+//        graphView.addReferenceLines(referenceLines: referenceLines)
+//        graphView.shouldAdaptRange = true
+//
+//    }
     
     
     func makeSmoothDark(){
-//        self.graphView = ScrollableGraphView(frame: graphView.frame, dataSource: self)
+        graphBaseView.subviews.forEach({$0.removeFromSuperview()})
+        
+        let graphView = ScrollableGraphView(frame: self.graphBaseView.frame, dataSource: self)
         
         // Setup the line plot.
         let linePlot = LinePlot(identifier: "darkLine")
@@ -119,7 +147,14 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
         graphView.addPlot(plot: linePlot)
         graphView.addPlot(plot: dotPlot)
         
-      
+        graphBaseView.addSubview(graphView)
+        
+        let leading = graphView.leadingAnchor.constraint(equalTo: self.graphBaseView.leadingAnchor)
+        let trailing = graphView.trailingAnchor.constraint(equalTo: self.graphBaseView.trailingAnchor)
+        let top = graphView.topAnchor.constraint(equalTo: self.graphBaseView.topAnchor)
+        let bottom = graphView.bottomAnchor.constraint(equalTo: self.graphBaseView.bottomAnchor)
+        
+        NSLayoutConstraint.activate([leading, trailing, top, bottom])
     }
     
     
