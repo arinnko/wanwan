@@ -14,7 +14,9 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
     var  saveData: UserDefaults = UserDefaults.standard
     
     @IBOutlet var collectionView:UICollectionView!
-    var linePlotData: [Double] = []
+    var weights: [Double] = []
+    var dates: [Date] = []
+    
     @IBOutlet var graphBaseView:UIView! {
         didSet {
             makeSmoothDark()
@@ -35,9 +37,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
     override func viewDidLoad() {
     super.viewDidLoad()
         
-        if saveData.array(forKey: "Data") != nil {
-            linePlotData = saveData.array(forKey: "Data") as! [Double]
-        }
+        
         
         
 //        graphView.dataSource = self
@@ -48,12 +48,11 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
         super.viewWillAppear(animated)
         print("view will appear")
         
-        if saveData.object(forKey: "Data") != nil{
-            linePlotData = saveData.object(forKey: "Data") as! [Double]
-            
-            
-            //reloadInputViews()
-           
+        if saveData.array(forKey: "weights") != nil {
+            weights = saveData.array(forKey: "weights") as! [Double]
+        }
+        if saveData.array(forKey: "dates") != nil {
+            dates = saveData.array(forKey: "dates") as! [Date]
         }
         
 //        makeDefalutGraph()
@@ -122,14 +121,14 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UITextF
         
         referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
         referenceLines.referenceLineColor = UIColor(red: 255.0/255, green: 0.0/255, blue: 100.0/255, alpha: 0.5).withAlphaComponent(0.2)
-        referenceLines.referenceLineLabelColor = UIColor.white
+        referenceLines.referenceLineLabelColor = UIColor(red: 255.0/255, green: 0.0/255, blue: 100.0/255, alpha: 0.5)
         
         referenceLines.positionType = .absolute
         // Reference lines will be shown at these values on the y-axis.
         referenceLines.absolutePositions = [10, 20, 25, 30] ;
         referenceLines.includeMinMax = false
         
-        referenceLines.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
+        referenceLines.dataPointLabelColor = UIColor(red: 255.0/255, green: 0.0/255, blue: 100.0/255, alpha: 0.5).withAlphaComponent(0.5)
         
         // Setup the graph
         graphView.backgroundFillColor = UIColor.clear//.init(hex: "#FFC0CB")
@@ -169,15 +168,20 @@ extension GraphViewController: ScrollableGraphViewDataSource {
         //            return 0
         //        }
         
-        return linePlotData[pointIndex]
+        return weights[pointIndex]
     }
     
     func label(atIndex pointIndex: Int) -> String {
-        return "FEB \(pointIndex)"
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        dateFormatter.dateFormat = "MM/dd"
+        
+        return dateFormatter.string(from: dates[pointIndex])
+        
     }
     
     func numberOfPoints() -> Int {
-        return linePlotData.count
+        return weights.count
     }
 }
 

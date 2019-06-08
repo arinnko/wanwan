@@ -13,9 +13,9 @@ class DateStoreViewController: UIViewController, UITextFieldDelegate {
     //@IBOutlet var dogPicker: UIPickerView!
     @IBOutlet var dataTextField: UITextField!
     var saveData: UserDefaults = UserDefaults.standard
-    var linePlotData: [Double] = []
     
-    
+    var weights: [Double] = []
+    var dates: [Date] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +24,52 @@ class DateStoreViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func saveButton() {
-        if saveData.array(forKey: "Data") != nil {
-            linePlotData = saveData.array(forKey: "Data") as! [Double]
+        // 呼び出し
+        if isOnlyNumber(dataTextField.text!) {
+            // 体重保存
+            if saveData.array(forKey: "weights") != nil {
+                weights = saveData.array(forKey: "weights") as! [Double]
+            }
+            let number: Double = NumberFormatter().number(from: dataTextField.text!) as! Double
+            weights.append(number)
+            saveData.set(weights, forKey: "weights")
+            
+            // 日付
+            if saveData.array(forKey: "dates") != nil {
+                dates = saveData.array(forKey: "dates") as! [Date]
+            }
+            dates.append(Date())
+            saveData.set(dates, forKey: "dates")
+            
+            let alert = UIAlertController(title: "保存", message: "保存しました", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { _ in
+                self.dismiss(animated: true, completion: nil)
+            }
+            alert.addAction(defaultAction)
+            present(alert, animated: true, completion: nil)
+        } else {
+            // 数字のみでない
+            let alert = UIAlertController(title: "エラー", message: "数字を入力してください", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+            alert.addAction(defaultAction)
+            present(alert, animated: true, completion: nil)
         }
-        var number: Double = NumberFormatter().number(from: dataTextField.text!) as! Double
-        linePlotData.append(number)
-        saveData.set(linePlotData, forKey: "Data")
-        let alert: UIAlertController = UIAlertController(title: "保存", message: "保存されました", preferredStyle: .alert)
+            
+    
     }
-    @IBAction func cancelButton() {
+    
+    @IBAction func cancel() {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    // 数字のみかを調べる。
+    func isOnlyNumber(_ str:String) -> Bool {
+        let predicate = NSPredicate(format: "SELF MATCHES '\\\\d+'")
+        return predicate.evaluate(with: str)
+    }
+    
+
+
+
+
 }
-
-
