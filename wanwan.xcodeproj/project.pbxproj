@@ -19,6 +19,7 @@
 		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
 		0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */; };
+		0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193C22FD62C400DD076D /* DailyinputViewController.swift */; };
 		0B5252061F98B73D0075F975 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252031F98B73D0075F975 /* wanwanm素材1.png */; };
 		0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252051F98B73D0075F975 /* wanwan素材2.png */; };
 		0B52520C1F98BF210075F975 /* wanwan素材4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520B1F98BF210075F975 /* wanwan素材4.png */; };
@@ -27,6 +28,7 @@
 		0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252111F9B834E0075F975 /* wanwan素材7.png */; };
 		0B8A8CE2214A837200130564 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8A8CE1214A837100130564 /* icon.png */; };
 		0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91969A2127DFA100C6F665 /* PostViewController.swift */; };
+		0BA5B9EE22BE3BA300D94A16 /* DogViewContlloer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */; };
 		0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */; };
 		0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */; };
 		0BB153A51FA1F5D1009F90F3 /* chiko1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A11FA1F5D0009F90F3 /* chiko1.jpg */; };
@@ -54,6 +56,7 @@
 		0B414CA31F58144900A12B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B414CA61F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B414CA81F58144900A12B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B50193C22FD62C400DD076D /* DailyinputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyinputViewController.swift; sourceTree = "<group>"; };
 		0B5252031F98B73D0075F975 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwanm素材1.png"; sourceTree = "<group>"; };
 		0B5252051F98B73D0075F975 /* wanwan素材2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材2.png"; sourceTree = "<group>"; };
 		0B52520B1F98BF210075F975 /* wanwan素材4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材4.png"; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		0B5252111F9B834E0075F975 /* wanwan素材7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材7.png"; sourceTree = "<group>"; };
 		0B8A8CE1214A837100130564 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		0B91969A2127DFA100C6F665 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewContlloer.swift; sourceTree = "<group>"; };
 		0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko3.jpg; sourceTree = "<group>"; };
 		0BB153A11FA1F5D0009F90F3 /* chiko1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko1.jpg; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				0BD8FE6C212FE73E00D2E813 /* DogListViewController.swift */,
 				0B414CA01F58144900A12B28 /* Main.storyboard */,
 				0B2223CE220C39D700489C4E /* DateStoreViewContlloer.swift */,
+				0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */,
+				0B50193C22FD62C400DD076D /* DailyinputViewController.swift */,
 				0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */,
 				0B91969A2127DFA100C6F665 /* PostViewController.swift */,
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
@@ -320,12 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA5B9EE22BE3BA300D94A16 /* DogViewContlloer.swift in Sources */,
 				0B0EE17E200772680077AF82 /* CalendarViewController.swift in Sources */,
 				0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */,
 				0BD8FE6D212FE73E00D2E813 /* DogListViewController.swift in Sources */,
 				0B2223CF220C39D700489C4E /* DateStoreViewContlloer.swift in Sources */,
 				0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
+				0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */,
 				0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */,
 				0B1AA38D21944CFB008DC2E5 /* Util.swift in Sources */,
 				0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */,
