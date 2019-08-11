@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/arisa/Desktop/wanwan 2/wanwan/DiaryTableViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/arisa/Desktop/wanwan 2/wanwan/DiaryTableViewCell.xib">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/arisa/Desktop/wanwan 2/wanwan/Util.swift">
+   </FileRef>
+   <FileRef
       location = "group:wanwan.xcodeproj">
    </FileRef>
    <FileRef

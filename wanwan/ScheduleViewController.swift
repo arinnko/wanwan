@@ -63,6 +63,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource {
         return cell!
         
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             self.scheduleArray.remove(at: indexPath.row)

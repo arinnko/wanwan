@@ -11,15 +11,20 @@
 		0B0EE17E200772680077AF82 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0EE17D200772680077AF82 /* CalendarViewController.swift */; };
 		0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */; };
 		0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EE181200778330077AF82 /* wanwan素材15.png */; };
-		0B1AA38D21944CFB008DC2E5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1AA38C21944CFB008DC2E5 /* Util.swift */; };
 		0B2223C921F0923600489C4E /* wanwan20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2223C821F0923600489C4E /* wanwan20.png */; };
 		0B2223CB21F0927900489C4E /* wanwan21.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2223CA21F0927900489C4E /* wanwan21.png */; };
 		0B2223CF220C39D700489C4E /* DateStoreViewContlloer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2223CE220C39D700489C4E /* DateStoreViewContlloer.swift */; };
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
-		0B414CA21F58144900A12B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA01F58144900A12B28 /* Main.storyboard */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
 		0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */; };
 		0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193C22FD62C400DD076D /* DailyinputViewController.swift */; };
+		0B50193F22FE530600DD076D /* DailydogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193E22FE530600DD076D /* DailydogViewController.swift */; };
+		0B50194122FE5DDF00DD076D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50194022FE5DDF00DD076D /* Util.swift */; };
+		0B50194722FFE73D00DD076D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50194622FFE73C00DD076D /* Util.swift */; };
+		0B50195122FFEC0400DD076D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B50194F22FFEC0400DD076D /* Main.storyboard */; };
+		0B50195522FFEC9600DD076D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50195422FFEC9600DD076D /* PostViewController.swift */; };
+		0B50195C22FFF28100DD076D /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */; };
+		0B50195E22FFFCE600DD076D /* DiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */; };
 		0B5252061F98B73D0075F975 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252031F98B73D0075F975 /* wanwanm素材1.png */; };
 		0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252051F98B73D0075F975 /* wanwan素材2.png */; };
 		0B52520C1F98BF210075F975 /* wanwan素材4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520B1F98BF210075F975 /* wanwan素材4.png */; };
@@ -27,8 +32,6 @@
 		0B5252101F9B83430075F975 /* wanwan素材6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520F1F9B83430075F975 /* wanwan素材6.png */; };
 		0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252111F9B834E0075F975 /* wanwan素材7.png */; };
 		0B8A8CE2214A837200130564 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8A8CE1214A837100130564 /* icon.png */; };
-		0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91969A2127DFA100C6F665 /* PostViewController.swift */; };
-		0BA5B9EE22BE3BA300D94A16 /* DogViewContlloer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */; };
 		0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */; };
 		0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */; };
 		0BB153A51FA1F5D1009F90F3 /* chiko1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BB153A11FA1F5D0009F90F3 /* chiko1.jpg */; };
@@ -46,17 +49,22 @@
 		0B0EE17D200772680077AF82 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		0B0EE17F200774C90077AF82 /* wanwan素材14.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wanwan素材14.PNG"; path = "wanwan/素材/wanwan素材14.PNG"; sourceTree = SOURCE_ROOT; };
 		0B0EE181200778330077AF82 /* wanwan素材15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材15.png"; sourceTree = "<group>"; };
-		0B1AA38C21944CFB008DC2E5 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		0B2223C821F0923600489C4E /* wanwan20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanwan20.png; sourceTree = SOURCE_ROOT; };
 		0B2223CA21F0927900489C4E /* wanwan21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanwan21.png; sourceTree = SOURCE_ROOT; };
 		0B2223CE220C39D700489C4E /* DateStoreViewContlloer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStoreViewContlloer.swift; sourceTree = "<group>"; };
 		0B414C991F58144900A12B28 /* wanwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B414C9C1F58144900A12B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B414CA11F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B414CA31F58144900A12B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B414CA61F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B414CA81F58144900A12B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B50193C22FD62C400DD076D /* DailyinputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyinputViewController.swift; sourceTree = "<group>"; };
+		0B50193E22FE530600DD076D /* DailydogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailydogViewController.swift; sourceTree = "<group>"; };
+		0B50194022FE5DDF00DD076D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Util.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/Util.swift"; sourceTree = "<absolute>"; };
+		0B50194622FFE73C00DD076D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Util.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/Util.swift"; sourceTree = "<absolute>"; };
+		0B50195022FFEC0400DD076D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B50195422FFEC9600DD076D /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryTableViewCell.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/DiaryTableViewCell.swift"; sourceTree = "<absolute>"; };
+		0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryTableViewCell.xib; sourceTree = "<group>"; };
 		0B5252031F98B73D0075F975 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwanm素材1.png"; sourceTree = "<group>"; };
 		0B5252051F98B73D0075F975 /* wanwan素材2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材2.png"; sourceTree = "<group>"; };
 		0B52520B1F98BF210075F975 /* wanwan素材4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材4.png"; sourceTree = "<group>"; };
@@ -64,8 +72,6 @@
 		0B52520F1F9B83430075F975 /* wanwan素材6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材6.png"; sourceTree = "<group>"; };
 		0B5252111F9B834E0075F975 /* wanwan素材7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材7.png"; sourceTree = "<group>"; };
 		0B8A8CE1214A837100130564 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
-		0B91969A2127DFA100C6F665 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewContlloer.swift; sourceTree = "<group>"; };
 		0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		0BB153A01FA1F5D0009F90F3 /* chiko3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko3.jpg; sourceTree = "<group>"; };
 		0BB153A11FA1F5D0009F90F3 /* chiko1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chiko1.jpg; sourceTree = "<group>"; };
@@ -115,19 +121,22 @@
 		0B414C9B1F58144900A12B28 /* wanwan */ = {
 			isa = PBXGroup;
 			children = (
+				0B50194622FFE73C00DD076D /* Util.swift */,
 				0B414C9C1F58144900A12B28 /* AppDelegate.swift */,
-				0B1AA38C21944CFB008DC2E5 /* Util.swift */,
 				0BB1539E1FA1EB15009F90F3 /* GraphViewController.swift */,
 				0BB153A81FA1F6E0009F90F3 /* DesignClass.swift */,
 				0B0EE17D200772680077AF82 /* CalendarViewController.swift */,
+				0B50194022FE5DDF00DD076D /* Util.swift */,
 				0BCF4BEE21293F2300FF8AD6 /* ScheduleViewController.swift */,
 				0BD8FE6C212FE73E00D2E813 /* DogListViewController.swift */,
-				0B414CA01F58144900A12B28 /* Main.storyboard */,
 				0B2223CE220C39D700489C4E /* DateStoreViewContlloer.swift */,
-				0BA5B9ED22BE3BA300D94A16 /* DogViewContlloer.swift */,
-				0B50193C22FD62C400DD076D /* DailyinputViewController.swift */,
+				0B50195422FFEC9600DD076D /* PostViewController.swift */,
 				0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */,
-				0B91969A2127DFA100C6F665 /* PostViewController.swift */,
+				0B50193C22FD62C400DD076D /* DailyinputViewController.swift */,
+				0B50193E22FE530600DD076D /* DailydogViewController.swift */,
+				0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */,
+				0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */,
+				0B50194F22FFEC0400DD076D /* Main.storyboard */,
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
 				0B414CA81F58144900A12B28 /* Info.plist */,
@@ -248,6 +257,7 @@
 				0B52520E1F9B7EC10075F975 /* wanwan素材5.png in Resources */,
 				0B5252101F9B83430075F975 /* wanwan素材6.png in Resources */,
 				0BB153A51FA1F5D1009F90F3 /* chiko1.jpg in Resources */,
+				0B50195E22FFFCE600DD076D /* DiaryTableViewCell.xib in Resources */,
 				0B8A8CE2214A837200130564 /* icon.png in Resources */,
 				0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */,
 				0B2223CB21F0927900489C4E /* wanwan21.png in Resources */,
@@ -255,10 +265,10 @@
 				0BB153A41FA1F5D1009F90F3 /* chiko3.jpg in Resources */,
 				0B5252121F9B834E0075F975 /* wanwan素材7.png in Resources */,
 				0B0EE182200778340077AF82 /* wanwan素材15.png in Resources */,
-				0B414CA21F58144900A12B28 /* Main.storyboard in Resources */,
 				0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */,
 				0B0EE180200774C90077AF82 /* wanwan素材14.PNG in Resources */,
 				0B52520C1F98BF210075F975 /* wanwan素材4.png in Resources */,
+				0B50195122FFEC0400DD076D /* Main.storyboard in Resources */,
 				0B5252061F98B73D0075F975 /* wanwanm素材1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,17 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA5B9EE22BE3BA300D94A16 /* DogViewContlloer.swift in Sources */,
 				0B0EE17E200772680077AF82 /* CalendarViewController.swift in Sources */,
 				0BB153A91FA1F6E0009F90F3 /* DesignClass.swift in Sources */,
+				0B50195522FFEC9600DD076D /* PostViewController.swift in Sources */,
 				0BD8FE6D212FE73E00D2E813 /* DogListViewController.swift in Sources */,
 				0B2223CF220C39D700489C4E /* DateStoreViewContlloer.swift in Sources */,
 				0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
+				0B50195C22FFF28100DD076D /* DiaryTableViewCell.swift in Sources */,
 				0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */,
+				0B50194722FFE73D00DD076D /* Util.swift in Sources */,
+				0B50194122FE5DDF00DD076D /* Util.swift in Sources */,
+				0B50193F22FE530600DD076D /* DailydogViewController.swift in Sources */,
 				0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */,
-				0B1AA38D21944CFB008DC2E5 /* Util.swift in Sources */,
-				0B91969B2127DFA100C6F665 /* PostViewController.swift in Sources */,
 				0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,20 +356,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B414CA01F58144900A12B28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B414CA11F58144900A12B28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0B414CA61F58144900A12B28 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B50194F22FFEC0400DD076D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B50195022FFEC0400DD076D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
