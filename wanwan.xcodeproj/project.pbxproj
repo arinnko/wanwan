@@ -17,14 +17,15 @@
 		0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B414C9C1F58144900A12B28 /* AppDelegate.swift */; };
 		0B414CA41F58144900A12B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA31F58144900A12B28 /* Assets.xcassets */; };
 		0B414CA71F58144900A12B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */; };
-		0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193C22FD62C400DD076D /* DailyinputViewController.swift */; };
-		0B50193F22FE530600DD076D /* DailydogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193E22FE530600DD076D /* DailydogViewController.swift */; };
+		0B50193D22FD62C400DD076D /* DiaryinputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193C22FD62C400DD076D /* DiaryinputViewController.swift */; };
+		0B50193F22FE530600DD076D /* DiarydogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50193E22FE530600DD076D /* DiarydogViewController.swift */; };
 		0B50194122FE5DDF00DD076D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50194022FE5DDF00DD076D /* Util.swift */; };
 		0B50194722FFE73D00DD076D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50194622FFE73C00DD076D /* Util.swift */; };
 		0B50195122FFEC0400DD076D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B50194F22FFEC0400DD076D /* Main.storyboard */; };
 		0B50195522FFEC9600DD076D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50195422FFEC9600DD076D /* PostViewController.swift */; };
 		0B50195C22FFF28100DD076D /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */; };
 		0B50195E22FFFCE600DD076D /* DiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */; };
+		0B5019602301306600DD076D /* DiaryshousaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50195F2301306600DD076D /* DiaryshousaiViewController.swift */; };
 		0B5252061F98B73D0075F975 /* wanwanm素材1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252031F98B73D0075F975 /* wanwanm素材1.png */; };
 		0B5252081F98B73D0075F975 /* wanwan素材2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5252051F98B73D0075F975 /* wanwan素材2.png */; };
 		0B52520C1F98BF210075F975 /* wanwan素材4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52520B1F98BF210075F975 /* wanwan素材4.png */; };
@@ -57,14 +58,15 @@
 		0B414CA31F58144900A12B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B414CA61F58144900A12B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B414CA81F58144900A12B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B50193C22FD62C400DD076D /* DailyinputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyinputViewController.swift; sourceTree = "<group>"; };
-		0B50193E22FE530600DD076D /* DailydogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailydogViewController.swift; sourceTree = "<group>"; };
+		0B50193C22FD62C400DD076D /* DiaryinputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryinputViewController.swift; sourceTree = "<group>"; };
+		0B50193E22FE530600DD076D /* DiarydogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarydogViewController.swift; sourceTree = "<group>"; };
 		0B50194022FE5DDF00DD076D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Util.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/Util.swift"; sourceTree = "<absolute>"; };
 		0B50194622FFE73C00DD076D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Util.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/Util.swift"; sourceTree = "<absolute>"; };
 		0B50195022FFEC0400DD076D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B50195422FFEC9600DD076D /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryTableViewCell.swift; path = "/Users/arisa/Desktop/wanwan 2/wanwan/DiaryTableViewCell.swift"; sourceTree = "<absolute>"; };
 		0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryTableViewCell.xib; sourceTree = "<group>"; };
+		0B50195F2301306600DD076D /* DiaryshousaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryshousaiViewController.swift; sourceTree = "<group>"; };
 		0B5252031F98B73D0075F975 /* wanwanm素材1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwanm素材1.png"; sourceTree = "<group>"; };
 		0B5252051F98B73D0075F975 /* wanwan素材2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材2.png"; sourceTree = "<group>"; };
 		0B52520B1F98BF210075F975 /* wanwan素材4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanwan素材4.png"; sourceTree = "<group>"; };
@@ -132,10 +134,11 @@
 				0B2223CE220C39D700489C4E /* DateStoreViewContlloer.swift */,
 				0B50195422FFEC9600DD076D /* PostViewController.swift */,
 				0BCA32332130ED2900C08E39 /* RegistrationViewController.swift */,
-				0B50193C22FD62C400DD076D /* DailyinputViewController.swift */,
-				0B50193E22FE530600DD076D /* DailydogViewController.swift */,
+				0B50193C22FD62C400DD076D /* DiaryinputViewController.swift */,
+				0B50193E22FE530600DD076D /* DiarydogViewController.swift */,
 				0B50195B22FFF28100DD076D /* DiaryTableViewCell.swift */,
 				0B50195D22FFFCE600DD076D /* DiaryTableViewCell.xib */,
+				0B50195F2301306600DD076D /* DiaryshousaiViewController.swift */,
 				0B50194F22FFEC0400DD076D /* Main.storyboard */,
 				0B414CA31F58144900A12B28 /* Assets.xcassets */,
 				0B414CA51F58144900A12B28 /* LaunchScreen.storyboard */,
@@ -222,7 +225,7 @@
 				TargetAttributes = {
 					0B414C981F58144900A12B28 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = LX2R37J669;
+						DevelopmentTeam = JBG4ZH42UR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -344,10 +347,11 @@
 				0BCF4BEF21293F2300FF8AD6 /* ScheduleViewController.swift in Sources */,
 				0BB1539F1FA1EB15009F90F3 /* GraphViewController.swift in Sources */,
 				0B50195C22FFF28100DD076D /* DiaryTableViewCell.swift in Sources */,
-				0B50193D22FD62C400DD076D /* DailyinputViewController.swift in Sources */,
+				0B50193D22FD62C400DD076D /* DiaryinputViewController.swift in Sources */,
 				0B50194722FFE73D00DD076D /* Util.swift in Sources */,
+				0B5019602301306600DD076D /* DiaryshousaiViewController.swift in Sources */,
 				0B50194122FE5DDF00DD076D /* Util.swift in Sources */,
-				0B50193F22FE530600DD076D /* DailydogViewController.swift in Sources */,
+				0B50193F22FE530600DD076D /* DiarydogViewController.swift in Sources */,
 				0BCA32342130ED2900C08E39 /* RegistrationViewController.swift in Sources */,
 				0B414C9D1F58144900A12B28 /* AppDelegate.swift in Sources */,
 			);
@@ -473,11 +477,11 @@
 			baseConfigurationReference = 3A5609F774A9327CE79286EF /* Pods-wanwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = LX2R37J669;
+				DEVELOPMENT_TEAM = JBG4ZH42UR;
 				INFOPLIST_FILE = wanwan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
+				PRODUCT_BUNDLE_IDENTIFIER = ArisaYamamoto.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -489,11 +493,11 @@
 			baseConfigurationReference = 6EA99B02D6683BB9EE1EC144 /* Pods-wanwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = LX2R37J669;
+				DEVELOPMENT_TEAM = JBG4ZH42UR;
 				INFOPLIST_FILE = wanwan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = waaaaaaa.wanwan;
+				PRODUCT_BUNDLE_IDENTIFIER = ArisaYamamoto.wanwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

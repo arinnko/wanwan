@@ -10,6 +10,9 @@ import UIKit
 class DiaryTableViewCell: UITableViewCell {
     
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var taityouLabel: UILabel!
+    @IBOutlet var gohanLabel: UILabel!
+    @IBOutlet var sanpoLabel: UILabel!
     
 
     override func awakeFromNib() {

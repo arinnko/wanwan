@@ -21,6 +21,8 @@ class CalenderViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         calenderView.delegate = self
         calenderView.dataSource = self
         
+        calenderView.frame.size.width = self.view.frame.width
+        
         calenderView.appearance.titleTodayColor = UIColor.black
         calenderView.appearance.headerTitleColor = u.rgb(r: 229, g: 166, b: 190)
         calenderView.appearance.eventColor = UIColor(red: 230.0/255.0, green: 168.0/255.0, blue: 218.0/255.0, alpha: 100)
